@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabor na Rede</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="icon/logo.favicon.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/39f6b5a1e4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <h1>Sabor na Rede</h1>
+      <img src="icon/logo.png" alt="Ícone de Hambúrguer">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#recipes">Receitas</a></li>
+        <li><a href="index.html" target="_blank">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section class="hero">
+    <h2>O portal de hambúrgueres caseiros para programadores!</h2>
+    <button onclick="location.href='#recipes'">Explorar Receitas</button>
+  </section>
+
+  <!-- Seção Sobre -->
+  <section class="about-page" id="about">
+    <div class="about-content">
+      <img src="icon/laptop_burger.jpg" alt="Notebook ao lado de um hambúrguer" class="about-image">
+      <div class="about-text">
+        <h3>Sobre o Sabor na Rede</h3>
+        <p>O <strong>Sabor na Rede</strong> foi criado para unir a paixão por hambúrgueres caseiros e o amor pela tecnologia. Sabemos que muitos programadores passam horas no computador e, muitas vezes, esquecem de fazer uma pausa para uma refeição de qualidade. Nossa missão é oferecer receitas fáceis e deliciosas de hambúrgueres, ideais para serem preparadas em casa e perfeitas para quem trabalha de home office.</p>
+        <p>Desde opções clássicas até alternativas vegetarianas, temos algo para todos os gostos. Aproveite e experimente uma nova receita hoje mesmo!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Receitas -->
+  <section class="recipes" id="recipes">
+    <h3>Receitas</h3>
+    <div class="recipe-gallery">
+      <!-- Hambúrguer Clássico da Codificação -->
+      <div class="recipe-item">
+        <img src="icon/classic_burger.jpg" alt="Hambúrguer Clássico com carne e queijo">
+        <h4>Hambúrguer Clássico da Codificação</h4>
+        <button onclick="toggleRecipe('classicRecipe')">Conferir Receita</button>
+        <div class="recipe-content" id="classicRecipe">
+          <h5>Ingredientes:</h5>
+          <ul>
+            <p>200g de carne moída; 1 fatia de queijo cheddar; Pão de hambúrguer; Sal e pimenta a gosto</p>
+          </ul>
+          <h5>Modo de Preparo:</h5>
+          <p>Tempere a carne com sal e pimenta, modele em formato de hambúrguer e grelhe até o ponto desejado. Adicione o queijo, monte no pão e sirva.</p>
+        </div>
+      </div>
+  
+      <!-- Double Stack Dev -->
+      <div class="recipe-item">
+        <img src="icon/double_stack.jpg" alt="Hambúrguer Double Stack com duas camadas de carne e queijo">
+        <h4>Double Stack Dev</h4>
+        <button onclick="toggleRecipe('doubleStackRecipe')">Conferir Receita</button>
+        <div class="recipe-content" id="doubleStackRecipe">
+          <h5>Ingredientes:</h5>
+          <ul>
+            <p>2 hambúrgueres de 150g cada; 2 fatias de queijo cheddar; Pão de hambúrguer; Alface, tomate e molho de sua preferência; Sal e pimenta a gosto</p>
+          </ul>
+          <h5>Modo de Preparo:</h5>
+          <p>Tempere os hambúrgueres, grelhe cada um e adicione uma fatia de queijo em cima de cada hambúrguer. Monte o sanduíche com o pão, os hambúrgueres empilhados, alface, tomate e molho.</p>
+        </div>
+      </div>
+  
+      <!-- Veggie Debugger -->
+      <div class="recipe-item">
+        <img src="icon/veggie_debugger.jpg" alt="Hambúrguer vegetariano com legumes">
+        <h4>Veggie Debugger</h4>
+        <button onclick="toggleRecipe('veggieDebuggerRecipe')">Conferir Receita</button>
+        <div class="recipe-content" id="veggieDebuggerRecipe">
+          <h5>Ingredientes:</h5>
+          <ul>
+            <p>1 hambúrguer de grão-de-bico; 1 fatia de queijo vegano; Pão integral; Alface, tomate e molho de tahine; Sal e pimenta a gosto</p>
+          </ul>
+          <h5>Modo de Preparo:</h5>
+          <p>Grelhe o hambúrguer de grão-de-bico, adicione o queijo vegano e monte o hambúrguer no pão integral com alface, tomate e molho de tahine.</p>
+        </div>
+      </div>
+  
+      <!-- Bacon Breakpoint -->
+      <div class="recipe-item">
+        <img src="icon/bacon_breakpoint.jpg" alt="Hambúrguer com bacon crocante">
+        <h4>Bacon Breakpoint</h4>
+        <button onclick="toggleRecipe('baconBreakpointRecipe')">Conferir Receita</button>
+        <div class="recipe-content" id="baconBreakpointRecipe">
+          <h5>Ingredientes:</h5>
+          <ul>
+            <p>200g de carne moída; 2 fatias de bacon crocante; 1 fatia de queijo cheddar; Pão de hambúrguer; Molho barbecue a gosto</p>
+          </ul>
+          <h5>Modo de Preparo:</h5>
+          <p>Grelhe a carne e adicione o queijo. Coloque o bacon crocante e monte o hambúrguer no pão com molho barbecue.</p>
+        </div>
+      </div>
+  
+      <!-- Cheddar Refresh -->
+      <div class="recipe-item">
+        <img src="icon/cheddar_refresh.jpg" alt="Hambúrguer com cheddar derretido">
+        <h4>Cheddar Refresh</h4>
+        <button onclick="toggleRecipe('cheddarRefreshRecipe')">Conferir Receita</button>
+        <div class="recipe-content" id="cheddarRefreshRecipe">
+          <h5>Ingredientes:</h5>
+          <ul>
+            <p>200g de carne moída; 2 fatias de queijo cheddar; Pão de hambúrguer; Molho especial de cheddar; Cebola caramelizada a gosto</p>
+          <h5>Modo de Preparo:</h5>
+          <p>Tempere e grelhe a carne, adicione o queijo cheddar para derreter. Monte no pão com cebola caramelizada e molho especial.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2024 Sabor na Rede. Todos os direitos reservados.</p>
+    <p>Desenvolvido por Letycia Ramos, Camila Karen e Gladystone.</p>
+    <ul class="footer-links">
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="https://wa.me/qr/D5LI2OU2O7DWL1" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+      <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+    </ul>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
